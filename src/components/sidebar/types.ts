@@ -28,3 +28,10 @@ export interface SidebarItemProps {
   setActiveItem: (itemName: string) => void;
   setHoveredItem: (itemName: string | null) => void;
 }
+
+export interface Task {
+  id: string;
+  text: string;
+  completed: boolean;
+  createdAt: string;
+}

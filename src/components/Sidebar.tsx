@@ -7,6 +7,7 @@ import SidebarLogo from './sidebar/SidebarLogo';
 import SidebarCollapseButton from './sidebar/SidebarCollapseButton';
 import SidebarNavigation from './sidebar/SidebarNavigation';
 import SidebarThemeToggle from './sidebar/SidebarThemeToggle';
+import TaskSection from './sidebar/TaskSection';
 import { navigationItems } from './sidebar/navigationData';
 
 const Sidebar = () => {
@@ -48,9 +49,14 @@ const Sidebar = () => {
         setActiveItem={setActiveItem}
         setHoveredItem={setHoveredItem}
       />
+      
+      {/* Task Management */}
+      <div className="border-t border-electron-border">
+        <TaskSection collapsed={collapsed} />
+      </div>
 
       {/* Sidebar footer - Theme toggle */}
-      <div className="p-4 border-t border-electron-border">
+      <div className="p-4 mt-auto border-t border-electron-border">
         <SidebarThemeToggle collapsed={collapsed} />
       </div>
 
