@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Electron theme specific colors
+				electron: {
+					bg: '#1D1F25',
+					sidebar: '#222229',
+					item: '#2A2D35', 
+					hover: '#33363F',
+					border: '#333842',
+					text: {
+						primary: '#FFFFFF',
+						secondary: '#A0A0A7',
+						muted: '#7A7A85',
+					}
 				}
 			},
 			borderRadius: {
@@ -84,11 +98,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					from: { opacity: '0' },
+					to: { opacity: '1' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.2s ease-out'
 			}
 		}
 	},
