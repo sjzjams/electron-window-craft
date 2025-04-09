@@ -8,6 +8,7 @@ import SidebarCollapseButton from './sidebar/SidebarCollapseButton';
 import SidebarNavigation from './sidebar/SidebarNavigation';
 import SidebarThemeToggle from './sidebar/SidebarThemeToggle';
 import TaskSection from './sidebar/TaskSection';
+import ApplicationLauncher from './sidebar/ApplicationLauncher';
 import { navigationItems } from './sidebar/navigationData';
 
 const Sidebar = () => {
@@ -49,6 +50,11 @@ const Sidebar = () => {
         setActiveItem={setActiveItem}
         setHoveredItem={setHoveredItem}
       />
+
+      {/* Application Launcher */}
+      <div className="border-t border-electron-border">
+        <ApplicationLauncher collapsed={collapsed} />
+      </div>
       
       {/* Task Management */}
       <div className="border-t border-electron-border">

@@ -35,3 +35,10 @@ export interface Task {
   completed: boolean;
   createdAt: string;
 }
+
+export interface Application {
+  id: string;
+  name: string;
+  icon: React.ElementType;
+  command: string;
+}
