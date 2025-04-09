@@ -3,7 +3,9 @@ import Layout from "@/components/Layout";
 
 const Index = () => {
   return (
-    <Layout />
+    <Layout>
+      {/* The sidebar is now the main component */}
+    </Layout>
   );
 };
 
